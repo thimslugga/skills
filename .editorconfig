@@ -1,0 +1,69 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs.
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+spelling_language = en-US
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.sh]
+indent_style = space
+indent_size = 2
+shell_variant = bash
+binary_next_line = true
+switch_case_indent = true
+space_redirects = true
+
+[*.{cmd,bat,ps1}]
+end_of_line = crlf
+
+[Makefile]
+indent_style = tab
+
+[*.{py,pyi}]
+indent_style = space
+indent_size = 4
+max_line_length = 100
+docstring_fill_column = 99 # Docstring line wrapping
+
+[*.{js,jsx,ts,tsx,bun}]
+indent_style = space
+indent_size = 2
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[package.json]
+indent_style = space
+indent_size = 2
+
+[*.{yaml,yml,yamllint}]
+indent_style = space
+indent_size = 2
+
+[*.toml]
+indent_style = space
+indent_size = 4
+
+[*.{xml,plist}]
+indent_style = space
+indent_size = 2
+
+[*.{htm1,htm,css,scss}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+indent_style = space
+indent_size = 2
+insert_final_newline = false

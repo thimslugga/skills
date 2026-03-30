@@ -1,0 +1,22 @@
+{
+  "name": "thimslugga-agent-skills",
+  "owner": {
+    "name": "Adam Kaminski",
+    "email": "adam@adamkaminski.com"
+  },
+  "metadata": {
+    "description": "Public repo for thimslugga's agent skills",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "skills",
+      "description": "Collection of various skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/shell-script"
+      ]
+    }
+  ]
+}
