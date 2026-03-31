@@ -2,3 +2,20 @@
 # https://git-scm.com/docs/gitattributes#_end_of_line_conversion
 
 * text=auto eol=lf
+
+# Common text files
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Script files
+*.sh text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.ts text eol=lf
+
+# Explicitly mark binary files
+*.png binary
+*.jpg binary
+*.gif binary
