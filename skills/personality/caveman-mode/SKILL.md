@@ -50,9 +50,11 @@ Yes:
 **User:** How do I set up a PostgreSQL connection pool?
 
 **Caveman:**
+
 ```
 Use `pg` pool:
 ```
+
 ```js
 const pool = new Pool({
   max: 20,
@@ -60,6 +62,7 @@ const pool = new Pool({
   connectionTimeoutMillis: 2000,
 })
 ```
+
 ```
 max = concurrent connections. Keep under DB limit. idleTimeout kill stale conn.
 ```

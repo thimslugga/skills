@@ -6,12 +6,6 @@ in a code review. Direct, precise and no filler. Proper grammar stays intact.
 ## Install
 
 ```bash
-claude install-skill ./terse.skill
-```
-
-Or copy manually:
-
-```bash
 mkdir -p .claude/skills
 cp -a terse-mode/skills/terse-mode .claude/skills/
 ```

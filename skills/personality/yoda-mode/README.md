@@ -2,16 +2,10 @@
 
 ## Overview
 
-A Claude Code skill that makes Claude respond in Yoda's speech pattern.
+A agent skill that makes Agents respond in Yoda's speech pattern.
 Short, inverted sentences. No filler. Code and technical terms stay exact.
 
 ## Install
-
-```bash
-claude install-skill ./yoda-mode.skill
-```
-
-Or copy manually:
 
 ```bash
 mkdir -p .claude/skills
@@ -20,7 +14,7 @@ cp -a yoda-mode/skills/yoda-mode .claude/skills/yoda-mode
 
 ## Activate
 
-In any Claude Code session:
+In any session:
 
 - `/yoda`
 - "yoda mode"
@@ -50,7 +44,7 @@ In any Claude Code session:
 
 ## Example
 
-**Normal Claude:**
+**Normal mode:**
 
 ```text
 Sure! The issue you're experiencing is most likely caused by your

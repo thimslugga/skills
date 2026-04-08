@@ -16,8 +16,12 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.sh]
+charset = utf-8
+end_of_line = lf
 indent_style = space
 indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
 shell_variant = bash
 binary_next_line = true
 switch_case_indent = true
@@ -30,16 +34,24 @@ end_of_line = crlf
 indent_style = tab
 
 [*.{py,pyi}]
+charset = utf-8
+end_of_line = lf
 indent_style = space
 indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
 max_line_length = 100
 docstring_fill_column = 99 # Docstring line wrapping
 
-[*.{js,jsx,ts,tsx,bun}]
+[*.{js,jsx,bun}]
 indent_style = space
 indent_size = 2
 
-[*.json]
+[*.{ts,tsx}]
+indent_style = space
+indent_size = 2
+
+[*.{json,jsonc}]
 indent_style = space
 indent_size = 2
 
@@ -47,7 +59,7 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 
-[*.{yaml,yml,yamllint}]
+[*.{yaml,yml,yamllint,bu,butane}]
 indent_style = space
 indent_size = 2
 
@@ -59,11 +71,16 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
-[*.{htm1,htm,css,scss}]
+[*.{htm1,htm}]
+indent_style = space
+indent_size = 2
+
+[*.{css,scss}]
 indent_style = space
 indent_size = 2
 
 [*.md]
 indent_style = space
 indent_size = 2
+trim_trailing_whitespace = false
 insert_final_newline = false
